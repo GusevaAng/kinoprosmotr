@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0%;
+    top: 70px;
+    height: 100%;
+    width: 22%;
+    background: #21212126;
+
+    .title {
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        font-family: $main-font;
+        font-size: 18px;
+        color: $secondary-font-color;
+    }
+
+    .favorite_film {
+        margin: 10px;
+        padding: 15px 40px;
+        list-style-type: '💖  ';
+        font-family: $main-font;
+        font-size: 16px;
+        color: $sidebar-font-color;
+        
+        @import '../../styles/links';
+        .films_link {
+            font-size: 16px;
+        }
+    }
+}

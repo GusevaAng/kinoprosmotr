@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+    
+.footer {
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 40px;
+    background: $footer-background;
+
+    .footer_text {
+        padding: 10px;
+        text-align: center;
+        font-family: $secondary-font;
+        font-size: 14px;
+        color: $secondary-font-color;
+    }
+}

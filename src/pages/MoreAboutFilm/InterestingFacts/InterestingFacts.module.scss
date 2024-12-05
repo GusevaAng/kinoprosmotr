@@ -1,0 +1,46 @@
+@import '../../../styles/variables';
+
+
+.container {
+    margin: 20px 0;
+    width: 100%;
+
+    .header {
+        margin: 0;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: solid 1.5px $gray-border;
+
+        .title {
+            margin: 10px 0;
+            font-family: $main-font;
+            font-size: 25px;
+            color: $main-font-color;
+        }
+    }
+
+    .facts {
+        margin: 5px;
+        padding: 0;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+
+        .unordered_list {
+            list-style-type: circle;
+
+            .list {
+                margin: 10px;
+                font-family: $main-font;
+                font-size: 18px;
+                color: $secondary-font-color;
+                line-height: 110%;
+            }
+        }
+    }
+}

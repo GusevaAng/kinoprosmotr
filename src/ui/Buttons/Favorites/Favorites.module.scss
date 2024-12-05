@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+
+.favorite_button_true,
+.favorite_button_false {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 40px;
+    width: 40px;
+    border: 1px solid $gray-border;
+    background: $button-color-grey2;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0 $button-shadow-purple;    
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translate(0,-1px);
+        box-shadow: 0 2px 4px 0 $button-shadow-blue;
+    }
+
+    .favorite_icon {
+        position: relative;
+        transform: none;
+    }
+}

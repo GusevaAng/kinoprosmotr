@@ -1,0 +1,19 @@
+@import './variables';
+
+// кнопка поиска: 
+.button_search {
+    height: 34px;
+    width: 34px;
+    align-content: center;
+    justify-items: center;
+    border: 1px solid $gray-border;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 0 $button-shadow-purple;    
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translate(0,-3px);
+        box-shadow: 0 2px 4px 0 $button-shadow-blue;
+    }
+}

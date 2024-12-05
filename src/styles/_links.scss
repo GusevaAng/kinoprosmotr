@@ -1,0 +1,37 @@
+@import './variables';
+
+
+// основные ссылки: на фильмы и в боковом меню
+.films_link {
+    text-decoration: none;
+    color: $link-color-grey;
+
+    &:visited {
+        color: $link-color-grey2;
+    }
+
+    &:hover {
+        color: $link-color-lilac;
+    }
+
+    &:active {
+        color: $link-color-pink;
+    }
+}
+
+
+// ссылки навигационного меню: 
+.navbar_link {
+    text-decoration: none;
+    color: inherit;
+
+    &:visited,
+    &:active {
+        color: $link-color-pink;
+    }
+
+    &:hover {
+        color: $link-color-lilac;
+    }
+
+}

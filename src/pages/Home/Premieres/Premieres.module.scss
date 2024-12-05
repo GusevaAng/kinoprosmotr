@@ -1,0 +1,51 @@
+@import '../../../styles/variables';
+
+
+
+.container {
+    margin: 5px;
+    margin-top: 10px;
+    padding: 0px;
+    width: 96%;
+    height: 40%;
+    position: relative;
+    left: 2%;
+    right: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    .slider {
+        margin: 0;
+
+        .background_poster {
+            margin: 0;
+            border-radius: 20px;
+            height: 50vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 5;
+
+            .wrapper {
+                background: $poster-background;
+                height: 50vh;
+
+                .film_link {
+                    text-decoration: none;
+
+                    .film_name {
+                        margin: 0;
+                        padding: 20px 40px;
+                        font-family: $main-font;
+                        font-size: 40px;
+                        color: $main-font-color;
+
+                        &:hover {
+                            color: $secondary-font-color;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}

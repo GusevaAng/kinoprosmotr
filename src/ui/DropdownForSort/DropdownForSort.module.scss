@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+
+.dropdown {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+
+    .label {
+        font-family: $main-font;
+        font-size: 16px;
+        color: $main-font-color;
+    }
+
+    .select {
+        padding: 5px 10px;
+        height: 30px;
+        width: 150px;
+        background: $button-color-grey;
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        text-align: center;
+        font-family: $main-font;
+        font-size: 15px;
+        color: $main-font-color;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+    }
+
+    .select:not([multiple]) {
+        background-image: url('../../assets/reusable_icons/selector-arrow.png') ;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: calc(100% - 0.25em) 0.5em;
+    }
+}

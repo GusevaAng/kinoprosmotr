@@ -1,0 +1,60 @@
+@import '../../../../styles/variables';
+
+
+.card {
+    width: 190px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+
+    .wrapper {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: $poster-background;
+        text-decoration: none;
+
+        .rating {
+            margin: 15px 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .rating_imdb {
+                font-family: $main-font;
+                font-size: 16px;
+                color: $secondary-font-color;
+            }
+        }
+
+        .footer {
+            margin: 5px;
+
+            .name {
+                margin: 5px;
+                text-align: center;
+                font-family: $main-font;
+                font-size: 20px;
+                color: $main-font-color;
+                line-height: 110%;
+                
+                &:hover {
+                    color: $secondary-font-color;
+                }
+            }
+    
+            .year {
+                text-align: center;
+                font-family: $main-font;
+                font-size: 16px;
+                color: $main-font-color;
+                line-height: 110%;
+            }
+        }
+    }
+}

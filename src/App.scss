@@ -1,0 +1,15 @@
+@import '/src/styles/_variables';
+
+
+.app {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: $main-background;
+    display: flex;
+    flex-direction: column;
+
+    .container {
+        flex: 1;
+    }
+}

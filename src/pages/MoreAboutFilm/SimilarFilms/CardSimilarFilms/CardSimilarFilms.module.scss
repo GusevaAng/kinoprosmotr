@@ -1,0 +1,42 @@
+@import '../../../../styles/variables';
+
+
+.card {
+    margin: 10px;
+    padding: 0;
+    height: 90%;
+
+    .background_poster {
+        margin: 0;
+        border-radius: 20px;
+        height: 105%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .wrapper {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 90%;
+            border-radius: 20px;
+            background: $poster-background;
+
+            .film_link {
+                text-decoration: none;
+
+                .film_name {
+                    font-family: $main-font;
+                    font-size: 25px;
+                    color: $main-font-color;
+                    line-height: 110%;
+
+                    &:hover {
+                        color: $secondary-font-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+
+.container {
+    margin: 30px 0;
+    width: 100%;
+
+    .genre_card {
+        margin: 30px 10px;
+        padding-bottom: 30px;
+        border-bottom: solid 0.6px $gray-border2;
+
+        .genre_wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            align-items: center;
+            cursor: pointer;
+    
+            .genre_img {
+                width: 70px;
+                height: 70px;
+                background: $secondary-background;
+                border: solid 1px $gray-border;
+                border-radius: 50%;
+            }
+    
+            .genre_title {
+                font-family: $main-font;
+                font-size: 25px;
+                color: $main-font-color;
+            }
+        }
+
+        .films_in_genre {
+            margin: 40px 0px;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            align-items: center;
+            overflow: scroll;
+        }
+    }
+}

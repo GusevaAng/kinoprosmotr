@@ -1,0 +1,90 @@
+@import '../../../../styles/variables';
+
+
+.card {
+    margin: 10px;
+    padding: 0;
+    height: 90%;
+
+    .background_poster {
+        margin: 0;
+        border-radius: 20px;
+        height: 98%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .wrapper {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 90%;
+            border-radius: 20px;
+            background: $poster-background;
+
+            .header {
+
+                .film_link {
+                    text-decoration: none;
+    
+                    .film_name {
+                        font-family: $main-font;
+                        font-size: 25px;
+                        color: $main-font-color;
+                        line-height: 110%;
+    
+                        &:hover {
+                            color: $secondary-font-color;
+                        }
+                    }
+                }
+            
+                .rating {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    .rating_imdb {
+                        font-family: $main-font;
+                        font-size: 16px;
+                        color: $secondary-font-color;
+                    }
+                }
+            }
+
+            .footer {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                justify-content: space-between;
+                align-items: center;
+
+                .film_genres {
+                    font-family: $main-font;
+                    font-size: 16px;
+                    color: $secondary-font-color;
+                }
+            
+                .favorite_button_true,
+                .favorite_button_false {
+                    height: 40px;
+                    width: 40px;
+                    border: 1px solid $gray-border;
+                    background: #6b6b6b54;
+                    backdrop-filter: blur(4px);
+                    border-radius: 10px;
+                    box-shadow: 1px 2px 3px 0 $button-shadow-purple;    
+                    transition: 0.5s;
+                    cursor: pointer;
+    
+                    &:hover {
+                        transform: translate(0,-1px);
+                        box-shadow: 0 3px 5px 0 $button-shadow-blue;
+                    }
+                }
+            }
+        }
+    }
+}

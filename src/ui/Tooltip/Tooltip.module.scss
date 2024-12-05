@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    
+    .tooltip_content {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $footer-background;
+        font-family: $secondary-font;
+        font-size: 14px;
+        color: $secondary-font-color;
+        padding: 8px;
+        border-radius: 10px;
+        white-space: pre-wrap;
+        z-index: 10;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 100%; 
+            left: 5%;
+            border-width: 5px;
+            border-style: solid;
+            border-color:  transparent transparent $footer-background transparent; 
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@import '../../../../styles/variables';
+
+
+.card {
+    margin: 10px;
+    padding: 0;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    border-radius: 20px;
+
+    &.positive {
+        background: $review-positive-background;
+    }
+
+    &.neutral {
+        background: $review-neutral-background;
+    }
+
+    &.negative {
+        background: $review-negative-background;
+    }
+
+    .header {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $main-font;
+        line-height: 110%;
+        color: $secondary-font-color;
+        border-bottom: solid 1px $gray-border2;
+
+        .user {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            justify-content: space-between;
+            align-items: center;
+
+            .avatar {
+                width: 50px;
+                height: 50px;
+                border: solid 1px $gray-border;
+                border-radius: 50%;
+            }
+
+            .author {
+                padding: 5px 10px;
+                font-size: 18px;
+            }
+        }
+
+        .date {
+            font-size: 15px;
+        }
+    }
+
+    .info_section {
+        padding: 20px;
+        padding-top: 0;
+        font-family: $main-font;
+
+        .title {
+            margin: 30px;
+            font-size: 22px;
+            color: $main-font-color;
+            line-height: 110%;
+        }
+
+        .review {
+            font-size: 16px;
+            color: $secondary-font-color;
+            line-height: 130%;
+        }
+
+        .button_visible_lines {
+            margin: 15px 0;
+            padding: 5px 10px;
+            background: $main-background;
+            border: solid 1px $gray-border2;
+            border-radius: 15px;
+            font-family: $main-font;
+            font-size: 14px;
+            color: $secondary-font-color;
+            cursor: pointer;
+        }
+    }
+}

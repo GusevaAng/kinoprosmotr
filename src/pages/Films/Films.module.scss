@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+
+.films_page {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 8%;
+    padding-right: 23%;
+    padding-bottom: 30px;
+
+    .header_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        border-bottom: solid 1px $gray-border;
+
+        .lists {
+            font-family: $main-font;
+            font-size: 28px;
+            color: $main-font-color;
+            line-height: 180%;
+        }
+    
+        .category {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-around;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+
+.series_page {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 8%;
+    padding-right: 23%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .info_section {
+        padding: 40px;
+        padding-top: 0;
+        border-top: solid 40px $gray-border;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .title {
+            margin-top: 20px;
+            font-family: $secondary-font;
+            font-size: 28px;
+            color: $dark-font-color;
+            line-height: 180%;
+        }
+
+        .text {
+            font-family: $secondary-font;
+            font-size: 18px;
+            color: $dark-font-color;
+            line-height: 120%;
+        }
+
+        .gif {
+            align-self: center;
+            width: 70%;
+            height: 70%;   
+        }
+    }
+}

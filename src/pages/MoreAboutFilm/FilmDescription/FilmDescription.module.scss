@@ -1,0 +1,129 @@
+@import '../../../styles/variables';
+
+
+.container {
+    width: 100%;
+    
+    .background {
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .film_description {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            background: $backdrop-background;
+
+            .poster {
+                margin: 0;
+                width: 30%;
+                height: 30%;
+            }
+
+            .wrapper {
+                padding: 5px;
+
+                .header {
+                    margin: 5px;
+                    padding: 0;
+                    width: 99%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                    align-items: center;
+                    font-family: $main-font;
+                    color: $secondary-font-color;
+            
+                    .year {
+                        font-size: 18px;
+                    }
+            
+                    .duration_time ,
+                    .age_rating {
+                        font-size: 15px;
+                    }
+            
+                    .clock_icon,
+                    .age_icon {
+                        height: 15px;
+                        width: 15px;
+                    }
+                }
+            
+                .info_section {
+                    margin: 15px 5px;
+                    padding: 0;
+                    width: 99%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    font-family: $main-font;
+            
+                    .name {
+                        font-size: 50px;
+                        color: $main-font-color;
+                    }
+            
+                    .slogan {
+                        font-size: 18px;
+                        color: $secondary-font-color;
+                    }
+            
+                    .description {
+                        font-size: 20px;
+                        color: $main-font-color;
+                    }
+                }
+            
+                .genres {
+                    margin: 20px 5px;
+                    padding: 0;
+                    width: 99%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+                    align-items: center;
+                    font-family: $main-font;
+                    color: $secondary-font-color;
+            
+                    .genres_title {
+                        font-size: 16px;
+                    }
+            
+                    .genres_blocks {
+                        .genre {
+                            margin: 0px 10px;
+                            padding: 5px 10px;
+                            border: solid 1px $gray-border;
+                            border-radius: 15px;
+                            font-size: 14px;
+                            line-height: 300%;
+                        }
+                    } 
+                }
+            
+                .rating {
+                    margin: 22px 5px;
+                    padding: 0;
+                    width: 99%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                    align-items: center;
+                    font-family: $main-font;
+                    color: $secondary-font-color;
+            
+                    .rating_title {
+                        font-size: 16px;
+                    }
+            
+                    .rating_blocks {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

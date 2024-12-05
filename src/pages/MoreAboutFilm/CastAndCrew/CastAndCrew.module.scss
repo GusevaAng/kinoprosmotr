@@ -1,0 +1,52 @@
+@import '../../../styles/variables';
+
+
+.container {
+    margin: 20px 0;
+    width: 100%;
+
+    .header {
+        margin: 0;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: solid 1.5px $gray-border;
+
+        .title {
+            margin: 10px 0;
+            font-family: $main-font;
+            font-size: 25px;
+            color: $main-font-color;
+        }
+
+        .button_more {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            background: $button-color-grey;
+            border: #ffffff00;
+            border-radius: 50%;
+            cursor: pointer;
+
+            .arrow_more {
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%, -50%);
+                z-index: 5;
+            }
+        }
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        justify-content: space-between;
+    }
+}

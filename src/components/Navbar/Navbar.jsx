@@ -1,13 +1,15 @@
 import { useState } from 'react' 
 import styles from './Navbar.module.scss'
 import { Link } from 'react-router-dom'
+import icon_home_white from '../../assets/navbar/icon-home-white.png'
+import icon_home_pink from '../../assets/navbar/icon-home-pink.png'
 
 
 const navbarItems = [
     {
         link: '/',
-        image: '/src/assets/navbar/icon-home-white.png',
-        imageHover: '/src/assets/navbar/icon-home-pink.png',
+        image: icon_home_white,
+        imageHover: icon_home_pink,
         label: 'Главная'
     },
     {
@@ -72,9 +74,9 @@ const Navbar = () => {
                             <Link to={item.link} className={styles.navbar_link} >
                                 <div className={styles.navigate_item_icon} >
                                     {showImageWhite ? (
-                                        <img src={item.imageHover} alt='icon home pink' />
+                                        <img src={item.imageHover} alt='icon pink' />
                                     ) : (
-                                        <img src={item.image} alt='icon home white' />
+                                        <img src={item.image} alt='icon white' />
                                     )}
                                 </div>
                                 <div className={styles.navigate_item_label} >
